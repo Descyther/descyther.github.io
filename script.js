@@ -1,5 +1,5 @@
 var canvasWidth = window.innerWidth;
-var canvasHeight= '300'; //window.innerHeight;
+var canvasHeight= window.innerHeight;
 var canvas = document.querySelector('canvas');
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
@@ -16,8 +16,8 @@ var mouse = {
 }
 
 
-var amtOfSquares = 50;
-var amtOfCircles = 100;
+var amtOfSquares = 200;
+var amtOfCircles = 200;
 
 
 var colourArray = [

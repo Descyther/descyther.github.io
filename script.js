@@ -1,6 +1,7 @@
 var canvasWidth = window.innerWidth;
 var canvasHeight= window.innerHeight;
 var canvas = document.querySelector('canvas');
+
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
@@ -16,8 +17,8 @@ var mouse = {
 }
 
 
-var amtOfSquares = 200;
-var amtOfCircles = 200;
+var amtOfSquares = 100;
+var amtOfCircles = 150;
 
 
 var colourArray = [
@@ -122,7 +123,7 @@ function Circle(x, y, speedX, speedY, radius, size){
 
 		this.x += this.speedX;
 		this.y += this.speedY;
-		
+			
 		//interact
 		if (mouse.x - this.x < mouseDistance && mouse.x - this.x > -mouseDistance
 			&& mouse.y - this.y < mouseDistance && mouse.y - this.y > -mouseDistance){
@@ -146,12 +147,12 @@ var squareArray = [];
 for(var i = 0; i < amtOfCircles; i++){
 	var x = Math.random() * (canvasWidth - radius * 2) + radius;
 	var y = Math.random() * (canvasHeight - radius * 2) + radius;
-	var speedX = Math.random() * 3;
-	var speedY = Math.random() * 3;
+	var speedX = Math.random() * 5;
+	var speedY = Math.random() * 5;
 	var size = 10;
 	var radius =  Math.floor(Math.random() * (/*(max - min + 1)) + min*/ 5 - 3 + 1 )) + 3;
 	var minRadius =  Math.floor(Math.random() * (/*(max - min + 1)) + min*/ 5 - 3 + 1 )) + 3;
-	var maxRadius = Math.floor(Math.random() * (/*(max - min + 1)) + min*/  40 - 30 + 1 )) + 30;
+	var maxRadius = Math.floor(Math.random() * (/*(max - min + 1)) + min*/  110 - 60 + 1 )) + 30;
 
 	circleArray.push(new Circle(x, y, speedX, speedY, radius, size));	
 }
@@ -160,12 +161,12 @@ for(var i = 0; i < amtOfCircles; i++){
 for(var j = 0; j < amtOfSquares; j++){
 	var x = Math.random() * (canvasWidth - size * 2) + size;
 	var y = Math.random() * (canvasHeight - size * 2) + size;
-	var speedX = Math.random() * 3;
-	var speedY = Math.random() * 3;
+	var speedX = Math.random() * 5;
+	var speedY = Math.random() * 5;
 	var size = Math.floor(Math.random() * (/*(max - min + 1)) + min*/ 10 - 1 + 1 )) + 1;;
 	var radius = size/2;
 	var minSize = Math.floor(Math.random() * (/*(max - min + 1)) + min*/ 10 - 1 + 1 )) + 1;
-	var maxSize = Math.floor(Math.random() * (/*(max - min + 1)) + min*/  80 - 60 + 1 )) + 60;
+	var maxSize = Math.floor(Math.random() * (/*(max - min + 1)) + min*/  140 - 90 + 1 )) + 60;
 	squareArray.push(new Square(x, y, speedX, speedY, size));
 }
 

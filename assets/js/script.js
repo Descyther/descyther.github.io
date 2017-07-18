@@ -5,6 +5,11 @@ var canvas = document.querySelector('canvas');
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
+if(window.innerWidth < 500){
+	canvasWidth = 500;
+	
+}
+
 document.addEventListener("DOMContentLoaded", handleDocumentLoad) /* //you can call the handleDocumentLoad part anything as it is an ID */
 
 function handleDocumentLoad()

@@ -17,8 +17,8 @@ var mouse = {
 }
 
 
-var amtOfSquares = 100;
-var amtOfCircles = 150;
+var amtOfSquares = 70;
+var amtOfCircles = 70;
 
 
 var colourArray = [

@@ -5,16 +5,165 @@ html, body{
 }
 
 #container{
-	background-color: red;
+	background-color: blue;
 	width: 100%;
 	height: 300%;
+	overflow-x: hidden;
 }
 
 #landing{
-	background-color: #15181d;
+	background-color: #15161d;
 	width: 100%;
-	height: 33.33333333333333333333%;
+	height: 33.33333%;
+	margin: 0;
 }
-#landing video {
 
+#nameHeading{
+	margin: 30% 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	
+	border-style: solid;
+	border-color: white;
+	border-width: 8px;
 }
+
+
+
+#introSection{
+	background-color: white;
+	width: 100%;
+	height: 33.333333%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS Hamburger Animated Menu Button*/
+/*position*/
+.c-hamburger {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  margin: 10px;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 6px solid #ff8500;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+/*idk*/
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  right: 18px;
+  height: 7px;
+  background: #ff8500;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: #ff8500;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -17px;
+  
+}
+
+.c-hamburger span::after {
+  bottom: -17px;
+}
+/*make the x*/
+.c-hamburger--htx {
+  background-color: #15161d;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: #15161d;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+.dropdown-menu{
+	position: absolute;
+	margin: 100px 0px;
+	
+}
+

@@ -31,27 +31,24 @@
 			<header id="landing">
 				<!--- Menu Navigation --->
 				
-				<button class="c-hamburger c-hamburger--htx" type="button">
+				<div class="dropdown" id="navBar">
+					<button data-toggle="dropdown" class="c-hamburger c-hamburger--htx dropdown-toggle" type="button">
 						<span>Main Menu</span>
-				</button>
-				<div class="navBar">
-						<ul class="navBarElements">
-							<li class="navBarElement"><a href="#landing">Home</a></li>
+					</button>	
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#landing">Home</a></li>
 							<li><a href="#introSection">Introduction</a></li>
-							<li ><a href="#qualSection">Qualifications</a></li>
-							<li ><a href="#expSection">Experience</a></li>
-							<li ><a href="#progSection">Programming</a></li>
+							<li><a href="#qualSection">Qualifications</a></li>
+							<li><a href="#expSection">Experience</a></li>
+							<li><a href="#progSection">Programming</a></li>
 						</ul>
 				</div>
 						
-				<div id="headLine"></div>  
+
 				<!--- Heading --->		
 				<img src="assets/css/images/myNameHeaderNotFancy.png" id="nameHeading" title="I'm Nathaniel Bradley" alt="I'm Nathaniel Bradley Heading">
 			</header>
-			
-			 
 
-			
 			<section class="sectionsPanel" id="introSection">
 				<button><a href="#landing">Back</a></button>
 			</section>
@@ -79,8 +76,5 @@
 		
 		<!---- My Scripts --->
 		<script src="assets/js/menuIconScript.js"></script>
-		<script src="assets/js/animateElements.js"></script>
-		<script src="assets/js/jqeury.js"></script>
-
 	</body>
 </html>

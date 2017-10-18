@@ -1,0 +1,14 @@
+.navBar{
+	background-color: green;
+	padding: 10px;
+	transition: padding 10s;
+}
+#list li{
+	display: inline;
+	border: solid white 1px;
+	
+}
+.navBar.happy{
+	
+	padding: 100px;
+}

@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Courier New";
+}
+header, main, aside, footer{
+    box-shadow: 5px 5px 10px rgb(97, 96, 96);
+    padding: 5px 4px;
+    text-align: center;
+    color:  rgb(255, 152, 233);
+    border: 4px solid rgb(255, 152, 233);
+}
+
+ul {
+    display: block;
+}
+
+nav {
+    position:fixed;
+    width: 100%;    
+    height: 40px;
+    background-color: #f58cff;
+    padding: 5px 4px;
+}
+nav > ul > li{
+    display: inline-block;
+    padding: 5px 4px;
+
+}
+
+#grid {
+    display: grid;
+    width: 100%;
+    padding: 60px 10px 0px 10px;
+    height: 150%;
+    grid-template-areas: "head head head"
+                         "leftSide main rightSide"
+                         "foot foot foot";
+    grid-template-rows: auto 1fr auto ;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    box-sizing: border-box;
+
+}
+  
+#grid > header {
+    grid-area: head;
+    font-size: 30px;
+}
+  
+
+#grid > main {
+    grid-area: main;
+    display: block;
+    background-color: rgb(255, 152, 233);
+}
+
+.leftSideSelection {
+    grid-area: leftSide;
+
+}
+.rightSideSelection {
+    grid-area: rightSide;
+
+
+}
+
+#grid > footer {
+    grid-area: foot;
+
+}
+
+
+
+/*Image Universal Style*/
+
+.thumbnail{
+    width:100px;
+    height:100px;
+    margin-top: 5px;
+    border: 4px solid white;
+}
